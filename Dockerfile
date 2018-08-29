@@ -1,11 +1,16 @@
 FROM centos:latest
 
-# Update and install ruby
-RUN yum -y update
+# install ruby
 RUN yum -y install ruby
 
-# Install Puppet Lint
-RUN gem install puppet-lint
+# Set Gemsource
+RUN gem install bundler
+COPY Gemfile /Gemfile
+
+#Set Default if not provided and install bundle
+ARG PUPPET_VERSION=5.5.6
+ENV ENV_PUPPET_VERSION=$PUPPET_VERSION
+RUN bundle install
 
 # Copy over entry script
 COPY start.sh /start.sh
