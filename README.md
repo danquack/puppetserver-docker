@@ -15,3 +15,7 @@ docker run --rm -v $PWD:/code/ -t mock-puppet:latest validate
 ```
 docker run --rm -e OPTIONS='--flag --flag2 --flag3' -v $PWD:/code/ -t mock-puppet:latest lint
 ```
+### Version
+```
+docker run --rm -t mock-puppet:latest version
+```
