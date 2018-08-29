@@ -1,5 +1,5 @@
 # Dockerized Puppet
-This module was designed to provide the ability to validate and lint test puppet code. Utilizing environment variables, this will allow you to install multiple versions of puppet to test your code. By default at runtime puppet will install version 5.5.6, unless other wise specified. See examples below.
+This module was designed to provide the ability to validate and lint test puppet code. Utilizing environment variables, this will allow you to install multiple versions of puppet on a given host, which can be utilized in your CICD pipeline to test your code. By default at runtime puppet will install version 5.5.6, unless other wise specified. See examples below.
 
 ## Build
 ```
