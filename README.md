@@ -17,5 +17,5 @@ docker run --rm -e OPTIONS='--flag --flag2 --flag3' -v $PWD:/code/ -t puppet-che
 ```
 ### Version
 ```
-docker run --rm -t mock-puppet:latest version
+docker run --rm -t puppet-checker:4.9.4 version
 ```
